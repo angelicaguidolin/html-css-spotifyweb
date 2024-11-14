@@ -30,6 +30,11 @@
 /*----------------
     LAYOUT
 ------------------*/
+
+.header-main{
+    display: flex;
+}
+
 .container {
     max-width: 1200px;
     margin-left: auto;
@@ -88,15 +93,24 @@ body {
 /*----------------
     HEADER
 ------------------*/
-
+header{
+    width: 300px;
+    background-color: blue;
+}
 /*----------------
     MAIN
 ------------------*/
-
+main{
+    width: 100%;
+    background-color: greenyellow;
+}
 /*----------------
     FOOTER
 ------------------*/
-
+footer{
+    height: 140px;
+    background-color: violet;
+}
 /*----------------
     RESPONSIVE
     Mobile First
