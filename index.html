@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Html& CSS Boilerplate</title>
+    <title>Spotify</title>
     <!-- Google Fonts: https://fonts.google.com/ -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,17 +13,52 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- /Font Awesome -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="./spotify/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
 <div class=" header-main">
 <header>
-   <div class= "icon-header">
-        <img class=" icon-small img-fluid" src="./spotify/img/logo-small.svg" alt="logo-small">
-        <img src="" alt="">
+  <div class="logo">
+    <img class="show-mobile" src="./spotify/img/logo-small.svg" alt="logo">
+    <img class="hidden-mobile" src="./spotify/img/logo.svg" alt="logo">
+  </div>
+  <nav class="nav-top">
+    <ul>
+        <li><img src="./spotify/img/home.svg" alt="Home"> <div class="hidden-mobile">Home</div></li>
+        <li><img src="./spotify/img/search.svg" alt="Home"><div class="hidden-mobile">Ricerca</div></li>
+        <li><img src="./spotify/img/libreria.svg"><div class="hidden-mobile">Libreria</div></li>
+    </ul>
+  </nav>
+  <div class="new-playlist">
+    <div class="playlist-title hidden-mobile">
+        <h3>PLAYLIST</h3>
+        <button class="btn-large btn-primary">+</button> <span><strong>Crea la playlist </strong></span>
+        <ul class="play-list hidden-mobile">
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+        
+           
+        </ul>
     </div>
+  </div>
+  <div class="user">
+   <ul>
+    <li><img src="./spotify/img/download.svg" alt=""><div class="hidden-mobile">Installa l'app</div></li>
+    <li><img src="./spotify/img/profile.svg" alt=""><div class="hidden-mobile"><strong>John Doe</strong></div></li>
+   </ul>
+  </div>
 </header>
 <main>
-    
+    <div class="upgragrade">
+        
+    </div>
 </main>
 </div>
 <footer>

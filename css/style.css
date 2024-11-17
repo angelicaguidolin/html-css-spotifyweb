@@ -10,7 +10,21 @@
     background-color: rgba(240, 128, 128, 0.2);
     min-height: 200px;
 }
-
+.debug .logo{
+    
+    background-color: rgb(247, 155, 36);
+}
+.debug .nav-top{
+    min-height: 100px;
+    background-color: aqua;
+}
+.debug .new-playlist{
+    background-color: cadetblue;
+}
+.debug .user{
+    min-height: 100px;
+    background-color: rgb(5, 78, 81);
+}
 /*----------------
     RESET
 ------------------*/
@@ -26,20 +40,26 @@
 .img-fluid {
     max-width: 100%;
 }
-.icon-small{
-    width: 60%
+.hidden-mobile{
+    display: none;
 }
+.show-mobile{
+    display: block;
+}
+
 
 /*----------------
     LAYOUT
 ------------------*/
 body{
     height: 100vh;
+    color: gray;
 }
 .header-main{
     display: flex;
     height: calc(100% - 100px);
 }
+
 
 .container {
     max-width: 1200px;
@@ -68,6 +88,7 @@ body{
     flex-grow: 1;
 }
 
+
 /*----------------
     TYPOGRAPHY
 ------------------*/
@@ -89,12 +110,13 @@ body {
 
 .btn-large {
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 26px;
 }
 
 .btn-primary {
-    background-color: lightcoral;
-    color: #fff;
+    background-color: gray;
+    color: #000;
+    border-color: transparent;
 }
 
 /*----------------
@@ -103,14 +125,65 @@ body {
 header{
     width: 50px;
     flex-shrink: 0;
-    background-color: #000000;
-}
-.icon-header{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: 5px ;
+    background-color: #000000;
+    overflow-y: auto;
 }
+.logo{
+    padding: 0 8px;
+    padding-bottom: 10px;
+}
+.nav-top ul{
+    list-style: none;
+    
+}
+.nav-top li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.nav-top li img{
+    height: 26px;
+}
+.nav-top li div{
+    padding-left: 4px;
+}
+.new-playlist{
+    min-height: 200px;
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-left: 10px;
+}
+.new-playlist ul{
+    list-style: none;
+}
+.new-playlist .playlist-title h3{
+    padding-top: 10px;
+    padding-bottom: 6px;
+    color: #fff;
+}
+
+
+.user ul{
+    list-style: none;
+}
+.user li{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    
+}
+.user li img{
+    height: 26px;
+    
+}
+.user li div{
+    padding-left: 10px;
+}
+
+
 /*----------------
     MAIN
 ------------------*/
@@ -137,7 +210,29 @@ footer{
     header{
         width: 230px;
     }
+    .logo{
+        padding: 15px;
+    }
+    .hidden-mobile{
+        display: block;
+    }
+    .show-mobile{
+        display: none;
+    }
+    .nav-top li{
+        padding-left: 18px;
+        border-left: 3px solid transparent;
+        justify-content: flex-start;
+    }
+    .nav-top li:first-child{
+        border-color: yellowgreen;
+    }
+ 
 }
+
+
+   
+
 /* MD >= 861px */
 @media screen and (min-width: 861px) {
     
