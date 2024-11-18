@@ -46,6 +46,10 @@
 .show-mobile{
     display: block;
 }
+a{
+    text-decoration: none;
+    color: lightgrey ;
+}
 
 
 /*----------------
@@ -118,6 +122,14 @@ body {
     color: #000;
     border-color: transparent;
 }
+.btn-upgrade{
+    border-radius: 23px;
+    border: 1px solid white;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 12px;
+    
+}
 
 /*----------------
     HEADER
@@ -137,27 +149,36 @@ header{
 .nav-top ul{
     list-style: none;
     
+    
 }
 .nav-top li{
     display: flex;
     align-items: center;
     justify-content: center;
     
+    
 }
 .nav-top li img{
     height: 26px;
 }
 .nav-top li div{
-    padding-left: 4px;
+    padding-left: 7px;
+    line-height: 2;
 }
 .new-playlist{
     min-height: 200px;
     flex-grow: 1;
     overflow-y: auto;
-    padding-left: 10px;
+    padding-left: 23px;
+    padding-top: 10px;
 }
 .new-playlist ul{
     list-style: none;
+}
+.new-playlist li{
+    padding-top: 10px;
+    line-height: 1.5;
+    font-size: 13px;
 }
 .new-playlist .playlist-title h3{
     padding-top: 10px;
@@ -192,7 +213,68 @@ main{
     overflow-y: auto;
     background-color: #141922;
 }
+.upgrade{
+    background-color: #090B12;
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+.naviga{
+    padding-top: 15px;
+    font-size: 14px;
+}
+.naviga ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
 
+.naviga ul li:first-child::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 40px;
+    background-color: lightgreen;
+    margin: 3px auto 0 auto;
+} 
+.albums{
+    padding-top: 15px;
+    padding-left: 15px;
+   
+}
+.albums .col{
+    width: calc(100% / 2);
+}
+.albums h3{
+    color: #fff;
+    padding-bottom: 20px;
+}
+.albums .playlist-img{
+    position: relative;
+}
+.albums .playlist-overlay{
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0,0,0,0.4);
+
+
+}
+.albums .playlist-details{
+    text-align:  center;
+}
+.albums .playlist-details strong{
+    color: #fff;
+}
 /*----------------
     FOOTER
 ------------------*/
@@ -235,9 +317,13 @@ footer{
 
 /* MD >= 861px */
 @media screen and (min-width: 861px) {
-    
+    .albums .col{
+        width: calc(100% / 4);
+    }
 }
 /* LG >= 1420 */
 @media screen and (min-width: 1420px) {
-    
+    .albums .col{
+        width: calc(100% / 6);
+    }
 }
