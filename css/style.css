@@ -305,6 +305,31 @@ footer{
     height: 100px;
     background-color: #282828;
 }
+.sx-footer-sec{
+    width: 25%;
+    display: flex;
+
+}
+.img-size{
+    width: 50px;
+    height: 50px;
+    padding-top: 28px;
+    padding-left: 10px;
+}
+.sx-footer-sec .info{
+    padding-top: 28px;
+    padding-left: 10px;
+    color: #fff;
+}
+
+.sx-footer-sec .info p{
+    font-size: 13px;
+    color: gray;
+}
+.sx-footer-sec .selector{
+    padding-top: 28px;
+    padding-left: 15px;
+}
 
 /*----------------
     RESPONSIVE
